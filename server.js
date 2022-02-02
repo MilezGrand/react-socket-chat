@@ -4,7 +4,6 @@ const port = 8000;
 
 const app = express();
 const server = require('http').Server(app);
-const cors = require('cors');
 const io = require("socket.io")(server, {
     cors: {
         origin: "*",
@@ -12,8 +11,6 @@ const io = require("socket.io")(server, {
 });
 
 const rooms = new Map();
-
-app.use(cors());
 
 app.get('/rooms', (req, res) => {
     res.json(rooms);
