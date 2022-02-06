@@ -13,8 +13,11 @@ code {
 }
 
 .App {
-  margin-top: 200px;
+  padding-top: 200px;
+  width: 50%;
+  margin: 0 auto;
 }
+
 .auth {
   padding-top: 50px;
   padding-bottom: 50px;
@@ -34,4 +37,78 @@ input {
   padding: 8px 10px;
   margin: 8px 0;
   box-sizing: border-box;
+}
+
+.chat {
+  display: flex;
+  height: 500px;
+  border: 1px solid rgba(159, 183, 187, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.chat-users {
+  border-right: 1px solid rgba(159, 183, 197, 0.1);
+  padding: 20px;
+  width: 200px;
+  background-color: #f6f9fa;
+}
+
+.chat-messages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 30px;
+}
+
+.messages {
+  flex: 1;
+  height: calc(100% - 155px);
+  overflow: auto;
+}
+
+.message {
+  margin-bottom: 10px;
+}
+
+.message span {
+  color: gray;
+}
+
+.message p {
+  display: inline-flex;
+  border-radius: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #7160ff;
+  padding: 10px 15px 15px;
+  margin: 0;
+  color: white;
+}
+
+li {
+  list-style: none;
+  background-color: white;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0px 7px 8px -6px rgba(34, 60, 80, 0.2);
+}
+
+ul {
+  padding: 0;
+}
+
+form {
+  display: flex;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
